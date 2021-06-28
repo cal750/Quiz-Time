@@ -1,56 +1,14 @@
-.hoongmane {
-    font-size: 48px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+* {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.text-box input {
-    width: 80%;
-    position: relative;
-    left: 10%;
-    text-align: center;
-    display: inline-block;
-    height: 50px;
-    background-color: tomato;
-}
-.guess-header {
-    font-size: 32px;
-    text-align: center;
-    width: 100%;
-    height: 40px;
-    display: inline-block;
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+    background-color: blanchedalmond;
 }
 
-.guesses-left {
-    width: 100%;
-    height: 40px;
-    font-size: 24px;
-    background-color: wheat;
-    text-align: center;
-}
-
-.button {
-    color: darkgoldenrod;
-    display: inline-block;
-    width: 20%;
-    height: 30px;
-    background-color: wheat;
-    position: relative;
-    left: 40%;
-}
-
-.button:active {
-    color: crimson;
-}
-
-.button:hover {
-    color: blueviolet;
-}
-
-.guesses {
-    display: inline-block;
-    background-color: wheat;
-    width: 60%;
-    height: 80px;
-    left: 20%;
-    position: relative;
-}
