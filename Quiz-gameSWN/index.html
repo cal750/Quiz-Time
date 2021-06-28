@@ -6,12 +6,37 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Quiz Time</title>
   <link rel = "stylesheet" href = "assets/css/style.css">
-  </head>
-  <title>Quiz</title>
+  <script src="assets/js/script.js"></script>
   </head>
     <body>
-      <h2 id="test_status"></h2>
-      <div id="test"></div>
+      <header class = "title">
+       <h1>Welcome to my game!</h1>
+      </header>
+
+      <main>
+        <section class = "quiz-box">
+            <button id = "startButton">Start</button>
+              <header>
+                Question:<span class = "question"></span>
+              </header>
+                <ol>
+                  <li><span class = "questionOne"></li>
+                  <li><span class = "questionTwo"></span></li>
+                  <li><span class = "questionThree"></span></li>
+                </ol>
+          </section>
+          <br>
+          <section class = "side-box">
+            <header class = timer>
+              <span id = "countdown"></span>
+            </header>
+            <h2 id = "test_status"></h2>
+          </section>
+        <br>
+          <section class = "footer">
+            <h4>Made with very little patience by Seth Nightingale</h4>
+          </section>
+          
+      </main>
     </body>
-    <script src = "assets/js/script.js"></script>
 </html>
