@@ -1,26 +1,38 @@
-// pos is position of where the user in the test or which question they're up to
+var timeleft = 15;
+var downloadTimer = setInterval(function(){
+  if(timeleft <= 0){
+    clearInterval(downloadTimer);
+    document.getElementById("countdown").innerHTML = "Out of time!";
+    pos = 4, renderQuestion();
+    get("test_status").innerHTML = "You ran out of time!";
+  } else {
+    document.getElementById("countdown").innerHTML = timeleft + " seconds remaining";
+  }
+  timeleft -= 1;
+}, 1000);
+
 var pos = 0, test, test_status, question, choice, choices, chA, chB, chC, correct = 0;
-// this is a multidimensional array with 4 inner array elements with 5 elements inside them
+
 var questions = [
   {
-      question: "What is 36 + 42",
-      a: "64",
-      b: "78",
-      c: "76",
+      question: "What is the capitol city in the Hunger games series",
+      a: "Warron",
+      b: "Panem",
+      c: "Licel",
       answer: "B"
     },
   {
-      question: "What is 7 x 4?",
-      a: "21",
-      b: "27",
-      c: "28",
+      question: "How many sides on a Dodecahedron",
+      a: "120",
+      b: "4",
+      c: "12",
       answer: "C"
     },
   {
-      question: "What is 16 / 4?",
-      a: "4",
-      b: "6",
-      c: "3",
+      question: "How many pixels is 1920 x 1080",
+      a: "2073600",
+      b: "1920900",
+      c: "4021080",
       answer: "A"
     },
   {
@@ -29,7 +41,21 @@ var questions = [
       b: "112",
       c: "96",
       answer: "C"
-    }
+    },
+   {
+        question: "What game was made by RareWare",
+        a: "Banjo Kazooie",
+        b: "Crash Bandicoot",
+        c: "DOOM",
+        answer: "A"
+      },
+      {
+        question: "What is the least used search engine",
+        a: "Google Chrome",
+        b: "Microsoft Edge",
+        c: "Internet Explorer",
+        answer: "C"
+      },
   ];
 
 function get(x){

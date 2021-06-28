@@ -2,13 +2,17 @@
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
+    
 }
 
 div#test{
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
     border:#5AB029 3px solid;
     padding:10px 40px 40px 40px;
     background-color:#E5FCE3;
-    width:50%;
+    width:80%;
 }
 
 body {
@@ -17,7 +21,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     justify-content: flex-start;
-    background-color: blanchedalmond;
+    background-color: beige;
 }
 
 main {
@@ -30,13 +34,24 @@ main {
     width: 100%;
     height: 70px;
     padding-bottom: 10px;
-    background-color: blueviolet;
+    background-color: cyan;
 }
 
 h1 {
     font-size: 36px;
     font-weight: 500;
     text-align: center;
+}
+
+img {
+    width: 350px;
+    height: 350px;
+    padding: 20px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    top: 100px;
 }
 
 .quiz-box {
@@ -48,17 +63,9 @@ h1 {
     flex-direction: column;
     justify-content: flex-start;
     border: black;
+    border-style: solid;
     background-color: #efefef;
-    line-height: 100px;
-}
-
-li button {
-    height: fit-content;
-    width: fit-content
-}
-
-button:active {
-    background-color: lightgreen;
+    line-height: 20px;
 }
 
 .side-box {
@@ -72,6 +79,7 @@ button:active {
     border: black;
     background-color: #efefef;
     text-align: left;
+    border-style: solid;
 }
 
 .timer {
@@ -89,4 +97,13 @@ button:active {
     flex-direction: column;
     background-color: #efefef;
     text-align: center;
+    border-style: solid;
+}
+
+button {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 100px;
+    margin: 20px;
 }
