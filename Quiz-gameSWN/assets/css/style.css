@@ -52,17 +52,6 @@ h1 {
     line-height: 100px;
 }
 
-button {
-    cursor: pointer;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    flex-direction: column;
-    margin: 10px;
-    border-style: ridge;
-    width: 100px;
-    height: 30px;
-}
-
 li button {
     height: fit-content;
     width: fit-content
