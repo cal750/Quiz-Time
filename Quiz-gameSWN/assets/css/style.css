@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
 }
 
 body {
@@ -31,9 +32,6 @@ h1 {
     text-align: center;
 }
 
-
-
-
 .quiz-box {
     display: flex;
     flex-wrap: wrap;
@@ -43,8 +41,7 @@ h1 {
     flex-direction: column;
     justify-content: flex-start;
     border: black;
-    background-color: #efefef;
-    
+    background-color: #efefef; 
 }
 
 .side-box {
@@ -54,17 +51,19 @@ h1 {
     height: 500px;
     margin: 12px;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: right;
     border: black;
     background-color: #efefef;
+    text-align: left;
 }
 
 .footer {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 30px;
+    height: 50px;
     justify-content: flex-start;
     flex-direction: column;
     background-color: #efefef;
+    text-align: center;
 }
