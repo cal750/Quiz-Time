@@ -3,7 +3,7 @@ var downloadTimer = setInterval(function(){
   if(timeleft <= 0){
     clearInterval(downloadTimer);
     document.getElementById("countdown").innerHTML = "Out of time!";
-    pos = 4, renderQuestion();
+    pos = 6, renderQuestion();
     get("test_status").innerHTML = "You ran out of time!";
   } else {
     document.getElementById("countdown").innerHTML = timeleft + " seconds remaining";
